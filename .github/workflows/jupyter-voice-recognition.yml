@@ -4,11 +4,12 @@ on:
     branches:
       - 'main'
     paths:
+      - "*"
       - "!workflows/**"
       - "!README.md"
       - "!build.rb"
-  # schedule:
-  #   - cron: "0 0 * * 0-6"
+  schedule:
+    - cron: "0 0 * * 1"
 jobs:
   build:
     runs-on: ubuntu-latest
