@@ -35,8 +35,8 @@ Use docker compose for persistent data in your local directory. You will have ac
 
 ````
 services:
-  jupyter-ultimate:
-    container_name: jupyter-ultimate
+  jupyter:
+    container_name: jupyter-voice-recognition
     image: davma/jupyter-voice-recognition:latest
     pull_policy: always
     volumes:
@@ -66,5 +66,3 @@ docker build -t jupyter-voice-recognition .
 ## 7.Documentation and guides
 
 [Jupyter Notebook](https://jupyter.org/)
-
-[Jupiter Ansible](https://github.com/ansible/ansible-jupyter-kernel)
