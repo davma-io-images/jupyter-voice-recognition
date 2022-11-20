@@ -1,4 +1,6 @@
-FROM jupyter/tensorflow-notebook
+ARG IMAGE
+
+FROM ${IMAGE} as parent
 
 USER root
 

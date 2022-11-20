@@ -7,8 +7,8 @@ on:
       - "!workflows/**"
       - "!README.md"
       - "!build.rb"
-  schedule:
-    - cron: "0 0 * * 0-6"
+  # schedule:
+  #   - cron: "0 0 * * 0-6"
 jobs:
   build:
     runs-on: ubuntu-latest
